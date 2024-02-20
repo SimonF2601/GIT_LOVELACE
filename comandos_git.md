@@ -37,11 +37,23 @@ Hara aparecer el archivo  .git que es la conexion de entre el proyecto y el dire
 - git config --global init.defaultBranch main 
 Este comando ayuda a nombrar la rama main por defecto 
 
+## Comando para saber el estado de nuestros archivos
+
+- git status 
+
+## Comando para ñistar las versiones de mi proyecto
+
+- git log 
+- git log --oneline
+
 ## Pasos para crear una version de nuestro codigo 
 
 1. Agregar todos los archivos al commit
 
 - git add . -> Agrega todo 
-- git add *js -> Agrega todos los que tengan la extension dada
+- git add \*js -> Agrega todos los que tengan la extension dada
 - git add index.js -> Agrega el archivo nombrado 
 
+2.  Crear uan nueva version (Tomar la foto del código)
+
+- git commit -m "Nombre del commit"
