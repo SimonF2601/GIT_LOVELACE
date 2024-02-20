@@ -46,6 +46,15 @@ Este comando ayuda a nombrar la rama main por defecto
 - git log 
 - git log --oneline
 
+## Comando para cambiar el nombre de las ramas 
+
+git branch -m "nombre antiguo" "nombre nuevo"
+
+## Comando para cambiar de versión
+
+- git checkout <Id del commit o nombre de la rama>
+
+# IMPORTANTE!
 ## Pasos para crear una version de nuestro codigo 
 
 1. Agregar todos los archivos al commit
