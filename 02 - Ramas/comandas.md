@@ -20,3 +20,4 @@
 # Comando para cambiar el nombre de una rama  (Se ejecuta en la rama que se este parado)
 
 - git branch -M nuevo_nombre
+

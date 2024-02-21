@@ -66,3 +66,4 @@ git branch -m "nombre antiguo" "nombre nuevo"
 2.  Crear uan nueva version (Tomar la foto del código)
 
 - git commit -m "Nombre del commit"
+- git commit -am "Sirve para hacer el add y commit juntos solo se puede hacer simpre y cuando haya un seguimiento antes"
