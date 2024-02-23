@@ -18,8 +18,10 @@ user.name: Especificacion
 
 ## Comandos para configuracion inicial de Git
 
-- git config --global user.name "Your name"
-- git config --global user.email "Your email"
+- git config --global user.name "Your name" ("Funciona para agregar el user a git")
+- git config --global user.email "Your email" ("Funciona para agregar el user a git")
+- git config --global core.editor "code --wait" ("Predetermina a VS code como editor")
+- git config --global -e 
 
 ## Comandos para editar o ver la configuracion de Git
 
@@ -28,7 +30,7 @@ user.name: Especificacion
 
 PD: Para salir del edit si es VIM es Esc y :wq . Si es NANO es con ctrl + O y ctrl + X
 
-## Como uniciar git en un directorio
+## Como iniciar git en un directorio
 
 - git init 
 
@@ -41,7 +43,7 @@ Este comando ayuda a nombrar la rama main por defecto
 
 - git status 
 
-## Comando para ñistar las versiones de mi proyecto
+## Comando para listar las versiones de mi proyecto
 
 - git log 
 - git log --oneline
@@ -53,6 +55,20 @@ git branch -m "nombre antiguo" "nombre nuevo"
 ## Comando para cambiar de versión
 
 - git checkout <Id del commit o nombre de la rama>
+
+##
+
+- git config --global core.autocrlf true ("Sirve para darle el caracter que necesita window para su salto de linea)
+
+## Comando para eliminar archivos desde git, se debe hacer commit cuando no se elimine correctamente
+
+- git rm --cached nombre_archivo  -> "Este cached tiene  como funcion de recargar el VS"
+- git rm nombre_archivo 
+
+## Comando para recuperar/descartar (cambios) archivos de un commit anterior o una eliminacion 
+
+- git restore nombre_archivo 
+- git restore --staged nombre_archivo ("Tiene como funcion para descartar los cambios que se hayan ido para el unstage <commit>")
 
 # IMPORTANTE!
 ## Pasos para crear una version de nuestro codigo 
@@ -67,3 +83,5 @@ git branch -m "nombre antiguo" "nombre nuevo"
 
 - git commit -m "Nombre del commit"
 - git commit -am "Sirve para hacer el add y commit juntos solo se puede hacer simpre y cuando haya un seguimiento antes"
+
+3. Hacer push para subir al repositorio remoto 

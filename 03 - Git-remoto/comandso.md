@@ -11,6 +11,7 @@
 - git remote -v
 
 # Comando para eliminar una conexión remota
+
 - git remote remove nombre_conexión
 
 # Comando para enviar informacion al git remoto
